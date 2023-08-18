@@ -1,0 +1,76 @@
+{
+  "name": "@sber-ssp-ui/spruce",
+  "version": "0.0.27",
+  "description": "expression language",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://nexus.sigma.sbrf.ru/nexus/content/repositories/EFS_thirdparty_npm/"
+  },
+  "scripts": {
+    "build": "gulp",
+    "prebuild": "set JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8 && mvn clean install",
+    "build:webpack": "webpack --config webpack.ui.config.js",
+    "reinstall": "npm prune && npm install",
+    "gulp:build": "gulp",
+    "test": "karma start karma.conf.js || exit 0",
+    "codecoverage": "karma start karma.conf.js --singleRun",
+    "dep:update:version": "ncu -u"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://stash.sigma.sbrf.ru/scm/ssp/ssp-spruce.git"
+  },
+  "keywords": [
+    "expression",
+    "language"
+  ],
+  "author": "SBT-Haziahmetov1-MSH@mail.ca.sbrf.ru",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/big.js": "6.1.2",
+    "@types/jasmine": "3.10.3",
+    "@types/json": "file:custom_typings/@types/json",
+    "@types/lodash": "4.14.178",
+    "ajv-keywords": "5.1.0",
+    "awesome-typescript-loader": "5.2.1",
+    "cpx": "1.5.0",
+    "del": "6.0.0",
+    "es3ify-loader": "0.2.0",
+    "file-loader": "6.2.0",
+    "glob-stream": "7.0.0",
+    "graceful-fs": "4.2.9",
+    "gulp": "4.0.2",
+    "gulp-insert": "0.5.0",
+    "gulp-typescript": "6.0.0-alpha.1",
+    "istanbul-instrumenter-loader": "3.0.1",
+    "jasmine": "4.0.2",
+    "jasmine-core": "4.0.0",
+    "karma": "6.3.10",
+    "karma-chrome-launcher": "3.1.0",
+    "karma-coverage": "2.1.0",
+    "karma-es5-shim": "0.0.4",
+    "karma-es6-shim": "1.0.0",
+    "karma-jasmine": "4.0.1",
+    "karma-remap-istanbul": "0.6.0",
+    "karma-source-map-support": "1.4.0",
+    "karma-sourcemap-loader": "0.3.8",
+    "karma-spec-reporter": "0.0.33",
+    "karma-typescript": "5.5.3",
+    "karma-webpack": "5.0.0",
+    "npm-check-updates": "12.1.0",
+    "ts-loader": "9.2.6",
+    "typescript": "4.5.4",
+    "url-loader": "4.1.1",
+    "webpack": "5.66.0",
+    "webpack-cli": "4.9.1",
+    "webpack-dev-server": "4.7.3"
+  },
+  "dependencies": {
+    "big.js": "6.1.1",
+    "lodash": "4.17.21"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.9"
+  }
+}

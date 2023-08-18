@@ -1,0 +1,40 @@
+pre {
+    padding: 5px;
+    margin: 5px;
+}
+
+.blockDiv {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid gray;
+}
+
+.parseAndAnalyzeDiv {
+    height: 500px;
+    overflow: auto;
+}
+
+.computeDiv {
+    height: 200px;
+    overflow: auto;
+}
+
+.string {
+    color: blue;
+}
+
+.number {
+    color: darkorange;
+}
+
+.boolean {
+    color: green;
+}
+
+.null {
+    color: magenta;
+}
+
+.key {
+    color: red;
+}

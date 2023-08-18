@@ -1,0 +1,10 @@
+import { ITypedObject, fromTypedToJS, fromJsToTyped } from './lib/util';
+import { parser } from './lib/parser';
+import { Interpreter } from './lib/interpreter/Interpreter';
+import { PathParser } from './lib/interpreter/util/context/PathParser';
+import { Token as IToken } from './lib/interpreter/token/Token';
+import { NumberUtils } from './lib/interpreter/util/NumberUtils';
+declare const cloneContext: typeof Interpreter.getSafeContext;
+declare const isBigDecimal: typeof NumberUtils.isBigDecimal;
+declare const parsePath: typeof PathParser.parse;
+export { ITypedObject, fromTypedToJS, fromJsToTyped, parser, Interpreter, IToken, cloneContext, isBigDecimal, parsePath, };

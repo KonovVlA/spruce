@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Тестовая страница</title>
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
+</head>
+<body>
+<div class="blockDiv">
+    <div>
+        <label for="expressionSource">Введите выражение</label>
+    </div>
+    <div>
+        <textarea id="expressionSource" cols="100" rows="5"></textarea>
+    </div>
+    <div>
+        <input id="parseButton" type="button" value="Разобрать"/>
+        <input id="analyze" type="button" value="Проанализировать"/>
+        <input id="compute" type="button" value="Вычислить"/>
+    </div>
+</div>
+<div class="blockDiv">
+    <div>Результат разбора/анализа</div>
+    <div id="parseAndAnalyzeDestination" class="parseAndAnalyzeDiv"></div>
+</div>
+<div class="blockDiv">
+    <div>Результат вычисления</div>
+    <div id="computeDestination" class="computeDiv"></div>
+</div>
+<script type="text/javascript" src="lib/ui.js" charset="utf-8"></script>
+</body>
+</html>
